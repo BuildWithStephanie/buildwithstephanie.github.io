@@ -1,15 +1,14 @@
 # Build With Stephanie
 
-Personal executive portfolio website for Stephanie Lyons.
+Executive portfolio website for Stephanie Lyons.
 
-## GitHub Pages setup
+## GitHub Pages
+Upload these files to the root of the `buildwithstephanie.github.io` repository:
 
-1. Create or open the repository `buildwithstephanie.github.io`.
-2. Upload `index.html` and `Stephanie_Lyons_Executive_Resume.pdf` to the repository root.
-3. Commit the changes.
-4. In **Settings → Pages**, set the source to **Deploy from a branch**, choose `main` and `/ (root)`, then save.
-5. The site will publish at `https://buildwithstephanie.github.io/`.
+- `index.html`
+- `Stephanie_Lyons_Resume.pdf`
+- `README.md`
 
-## Updating the site
+The site publishes at:
 
-Replace `index.html` with the revised version and commit again. Keep the resume filename unchanged so the download button continues working.
+https://buildwithstephanie.github.io
