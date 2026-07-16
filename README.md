@@ -1,11 +1,12 @@
 # Build With Stephanie
 
-Final executive portfolio website for Stephanie Lyons.
+Final executive portfolio for Stephanie Lyons.
 
-## Upload to the root of `buildwithstephanie.github.io`
+Upload the complete contents of this package to the root of:
+`buildwithstephanie.github.io`
 
-- `index.html`
-- `Stephanie_Lyons_Resume.pdf`
-- `README.md`
-
-Live site: https://buildwithstephanie.github.io
+Required:
+- index.html
+- Stephanie_Lyons_Resume.pdf
+- assets/
+- README.md
