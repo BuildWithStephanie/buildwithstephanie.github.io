@@ -1,10 +1,11 @@
-# Build With Stephanie
+# Build With Stephanie — Final Job-First Site
 
-Final executive portfolio for Stephanie Lyons.
-
-Upload these three files directly to the root of:
-`buildwithstephanie.github.io`
+Upload all four files directly to the root of the GitHub repository:
 
 - index.html
+- Stephanie_Lyons_Headshot.jpeg
 - Stephanie_Lyons_Resume.pdf
 - README.md
+
+Locked navigation:
+Approach → Career → Operating Systems → Transformation Stories → Executive Endorsements → Contact

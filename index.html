@@ -1,10 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>Stephanie Lyons | AI-Enabled Customer Operations Executive</title>
-<meta name="description" content="Stephanie Lyons builds customer-centered operating systems across onboarding, support, success, customer intelligence, and executive decision-making.">
+<meta content="Stephanie Lyons builds customer-centered operating systems across onboarding, support, success, customer intelligence, and executive decision-making." name="description"/>
 <style>
 :root{
   --ink:#13223b;--text:#344156;--muted:#6d7787;--blue:#145cff;--gold:#ad8132;
@@ -135,259 +136,361 @@ footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-s
 .endorsement cite{display:block;margin-top:16px;color:#cbd5e5;font-style:normal;font-size:.82rem}
 @media(max-width:920px){.nav-cta,.nav-resume{display:none}.proof-gallery,.endorsements{grid-template-columns:1fr}}
 
+
+/* FINAL JOB-FIRST VISUAL SYSTEM — locked */
+:root{
+  --ink:#102f35;
+  --text:#314248;
+  --muted:#69777b;
+  --blue:#b78334;
+  --gold:#b78334;
+  --paper:#f7f4ee;
+  --white:#fffdf9;
+  --soft:#efe9df;
+  --line:#d8d0c3;
+  --teal:#103b42;
+  --teal-deep:#082c33;
+  --cream:#f7f4ee;
+  --charcoal:#202829;
+  --walnut:#6b4b34;
+}
+body{background:var(--paper);color:var(--text)}
+header{
+  background:rgba(8,44,51,.97);
+  border-bottom:1px solid rgba(183,131,52,.36);
+  backdrop-filter:blur(14px)
+}
+.brand{color:#fff}
+.brand span{color:var(--gold)}
+.navlinks{gap:18px;align-items:center}
+.navlinks>a{color:#f8f5ee}
+.navlinks>a:hover{color:#e2b767}
+.nav-resume{
+  border:1px solid var(--gold);
+  padding:9px 12px;
+  color:#fff!important;
+  border-radius:3px
+}
+.nav-cta{
+  background:var(--gold);
+  border-color:var(--gold);
+  color:#102f35!important;
+  padding:10px 13px
+}
+.hero{
+  background:var(--teal-deep);
+  color:#fff;
+  padding:0
+}
+.hero .wrap{width:min(1400px,100%);padding:0}
+.hero-grid{
+  grid-template-columns:minmax(0,.95fr) minmax(460px,1.05fr);
+  gap:0;
+  align-items:stretch;
+  min-height:600px
+}
+.hero-grid>div:first-child{
+  padding:78px max(42px,calc((100vw - 1160px)/2)) 62px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:linear-gradient(90deg,var(--teal-deep) 78%,rgba(8,44,51,.78))
+}
+.hero h1{color:#fff}
+.hero h1 em{color:var(--gold)}
+.hero p{color:#f2f1ed}
+.eyebrow,.kicker{color:var(--gold)}
+.hero-portrait{min-height:600px;overflow:hidden;background:var(--teal)}
+.hero-portrait img{
+  width:100%;height:100%;display:block;object-fit:cover;
+  object-position:52% 50%
+}
+.btn{border-color:var(--gold)}
+.btn.primary{background:var(--gold);color:var(--teal-deep)}
+.btn.ghost{color:inherit;background:transparent}
+.hero .btn.ghost{color:#fff}
+.metric-band{
+  margin:0;
+  border-left:0;border-right:0;
+  background:var(--white)
+}
+.metric b{color:var(--teal)}
+section:nth-of-type(even):not(.hero){background:var(--white)}
+section:nth-of-type(odd):not(.hero){background:var(--paper)}
+.section-title,h1,h2,h3,.principle b,.step b,.body-cols h4,.role b,.ai-flow b{color:var(--ink)}
+.principle,details.system,.story,.ai-item,.contact{
+  background:var(--white);
+  border-color:var(--line)
+}
+details.system[open]{box-shadow:0 12px 30px rgba(8,44,51,.09)}
+.expand,.proof-card summary,.story details summary{color:var(--gold)}
+.timeline{border-left-color:var(--gold)}
+.role:before{background:var(--gold)}
+.pill{background:#f3eadb;border-color:#d8bd91;color:var(--ink)}
+.chip{background:#eee8de}
+.endorsement{background:var(--teal-deep);border-left-color:var(--gold)}
+.endorsement cite{color:#e6ddd0}
+.representative-work{
+  margin-top:30px;padding:24px 26px;background:var(--white);
+  border:1px solid var(--line);border-left:4px solid var(--gold)
+}
+.representative-work h3{font-family:Georgia,serif;font-size:1.35rem;margin-bottom:8px}
+.representative-work p{margin:10px 0 0}
+.ai-embedded{margin-top:56px;padding-top:52px;border-top:1px solid var(--line)}
+.contact .btn.ghost{color:var(--ink)}
+footer{background:var(--teal-deep);color:#e8e2d8;border-top-color:rgba(183,131,52,.4)}
+
+@media(max-width:1100px){
+  .navlinks{gap:12px;font-size:.78rem}
+  .nav-resume,.nav-cta{display:none}
+}
+@media(max-width:920px){
+  nav{min-height:64px}
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-grid>div:first-child{padding:54px 30px 38px}
+  .hero-portrait{min-height:0;aspect-ratio:4/3}
+  .hero-portrait img{object-position:52% 42%}
+}
+@media(max-width:600px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .hero .wrap{width:100%}
+  .hero-grid>div:first-child{padding:42px 22px 30px}
+  .hero h1{font-size:clamp(2.65rem,14vw,4rem)}
+  .hero-portrait{aspect-ratio:4/5}
+  .hero-portrait img{object-position:52% 40%}
+  .metric-band{grid-template-columns:repeat(2,1fr)}
+  .metric{padding:17px 14px}
+  .metric:nth-child(odd){border-right:1px solid var(--line)}
+  .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
+}
 </style>
 </head>
 <body>
 <header>
- <div class="wrap">
-  <nav>
-   <a class="brand" href="#top">BUILD WITH <span>STEPHANIE</span></a>
-   <div class="navlinks">
-    <a href="#approach">Approach</a>
-    <a href="#systems">Operating Systems</a>
-    <a href="#stories">Company Stories</a>
-    <a href="#career">Career</a>
-    <a class="nav-resume" href="Stephanie_Lyons_Resume.pdf" download>Resume ↓</a>
-    <a class="nav-cta" href="#contact">Contact</a>
-   </div>
-  </nav>
- </div>
+<div class="wrap">
+<nav>
+<a class="brand" href="#top">BUILD WITH <span>STEPHANIE</span></a>
+<div class="navlinks"><a href="#approach">Approach</a><a href="#career">Career</a><a href="#systems">Operating Systems</a><a href="#stories">Transformation Stories</a><a href="#endorsements">Executive Endorsements</a><a href="#contact">Contact</a><a class="nav-resume" download="" href="Stephanie_Lyons_Resume.pdf">Download Résumé</a><a class="nav-cta" href="#contact">Contact Stephanie</a></div>
+</nav>
+</div>
 </header>
-
 <main id="top">
+
+
+
+
+
+
+
+
 <section class="hero">
- <div class="wrap">
-  <div class="hero-grid">
-   <div>
-    <div class="eyebrow">Customer Experience · Operations · AI Enablement</div>
-    <h1>Invisible AI.<br><em>Visible</em> Customer Experience.</h1>
-    <p>I build customer-centered operating systems that make complex businesses easier to run—connecting strategy, workflows, data, automation, and human judgment so teams can scale without losing the customer.</p>
-    <div class="ctas">
-     <a class="btn primary" href="#systems">Explore the Systems →</a>
-     <a class="btn ghost" href="Stephanie_Lyons_Resume.pdf" download>Download Resume ↓</a>
-     <a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Opportunity">Contact Stephanie →</a>
-    </div>
-   </div>
-   <div class="hero-note">I take complex things and make them simple enough that people actually use them.</div>
-  </div>
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="eyebrow">Customer Experience · Operations · AI Enablement</div>
+<h1>Invisible AI.<br/><em>Visible</em> Customer Experience.</h1>
+<p>I build customer-centered operating systems that make complex businesses easier to run—connecting strategy, workflows, data, automation, and human judgment so teams can scale without losing the customer.</p>
+<div class="ctas">
+<a class="btn primary" href="#systems">Explore the Systems →</a>
+<a class="btn ghost" download="" href="Stephanie_Lyons_Resume.pdf">Download Resume ↓</a>
+<a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Opportunity">Contact Stephanie →</a>
+</div>
+</div>
 
-  <div class="metric-band">
-   <div class="metric"><small>Business Scale</small><b>$68M → $122M</b><span>Combined company revenue growth during tenure</span></div>
-   <div class="metric"><small>Transformation</small><b>4–6 Months → 28 Days</b><span>Customer onboarding</span></div>
-   <div class="metric"><small>Customer Experience</small><b>99.4% CSAT</b><span>Up from 86%</span></div>
-   <div class="metric"><small>Operating Leverage</small><b>4:00 → 2:03</b><span>Average support handle time</span></div>
-  </div>
- </div>
-</section>
-
-<section id="approach">
- <div class="wrap">
-  <div class="kicker">Approach</div>
-  <h2 class="section-title">Business first. Customer always. AI where it creates leverage.</h2>
-  <p class="lead">I do not start with a tool. I start with the customer journey, the decisions teams need to make, and the friction preventing them from doing their best work.</p>
-  <div class="approach-grid">
-   <div class="belief">The goal is not to make people work faster. It is to redesign work so people spend more time where human judgment creates value.</div>
-   <div class="principles">
-    <div class="principle"><b>Find the friction</b>Map where customers stall, teams duplicate work, or leadership lacks visibility.</div>
-    <div class="principle"><b>Design the operating model</b>Clarify ownership, milestones, governance, data, and escalation.</div>
-    <div class="principle"><b>Apply AI intentionally</b>Automate classification, synthesis, routing, and pattern detection—not relationships.</div>
-    <div class="principle"><b>Measure adoption and impact</b>A system is not successful because it launched. It succeeds when people use it and outcomes improve.</div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="systems">
- <div class="wrap">
-  <div class="kicker">Operating Systems I’ve Built</div>
-  <h2 class="section-title">Different businesses. Different challenges.</h2>
-  <p class="lead">I do not bring companies a canned playbook. I start by understanding the business, its customers, and the constraints holding growth back—then design the operating system that organization actually needs.</p>
-
-  <div class="systems">
-   <details class="system" open>
-    <summary>
-     <div class="system-title"><span class="system-num">01</span><div><h3>Customer Onboarding Operating System</h3><div class="system-summary">A measurable path from contract signature to first value, adoption, and a clean handoff.</div></div></div>
-     <span class="expand">+</span>
-    </summary>
-    <div class="system-body">
-     <div class="system-grid">
-      <div class="step"><small>Discover</small><b>Goals, readiness, roles, risks</b></div>
-      <div class="step"><small>Configure</small><b>Data, integrations, ownership</b></div>
-      <div class="step"><small>Activate</small><b>Training, first value, adoption</b></div>
-      <div class="step"><small>Handoff</small><b>Health score, success plan, next steps</b></div>
-     </div>
-     <div class="body-cols">
-      <div><h4>What I built</h4><ul><li>Milestone-based implementation framework</li><li>Automated slippage and failed-test alerts</li><li>Onboarding funnel and bottleneck reporting</li><li>Implementation briefs, success plans, go-live checklists, and health-scored handoffs</li></ul></div>
-      <div><h4>Where AI created leverage</h4><ul><li>Reduced manual follow-up</li><li>Surfaced risk points earlier</li><li>Supported internal tooling when engineering capacity was limited</li><li>Improved knowledge retrieval and workflow consistency</li></ul></div>
-     </div>
-     <div class="result-row"><span class="pill">4–6 months → 28 days</span><span class="pill">27% higher renewal for sub-30-day onboarding</span><span class="pill">First-value milestone defined early</span></div>
-    </div>
-   </details>
-
-   <details class="system">
-    <summary>
-     <div class="system-title"><span class="system-num">02</span><div><h3>Support + AI Operating System</h3><div class="system-summary">Move support from reactive ticket handling to assisted, automated, and proactive service.</div></div></div>
-     <span class="expand">+</span>
-    </summary>
-    <div class="system-body">
-     <div class="system-grid">
-      <div class="step"><small>Assist</small><b>Knowledge, triage, agent support</b></div>
-      <div class="step"><small>Automate</small><b>Routing, self-service, repetitive flows</b></div>
-      <div class="step"><small>Anticipate</small><b>Patterns, alerts, prevention</b></div>
-      <div class="step"><small>Improve</small><b>CSAT, cost, quality loops</b></div>
-     </div>
-     <div class="body-cols">
-      <div><h4>What I built</h4><ul><li>Zendesk routing, priority, and escalation logic</li><li>Dynamic knowledge and response workflows</li><li>Weekly automation-impact reviews</li><li>Closed-loop collaboration across Support, Product, Engineering, and CX</li></ul></div>
-      <div><h4>Where AI created leverage</h4><ul><li>Issue classification and intent routing</li><li>Response suggestions and tone checks</li><li>Sentiment tagging and trend analysis</li><li>Proactive alerts before repeat issues grew</li></ul></div>
-     </div>
-     <div class="result-row"><span class="pill">4:00 → 2:03 handle time</span><span class="pill">99.4% peak CSAT</span><span class="pill">28% of inbound volume automated in sample model</span></div>
-    </div>
-   </details>
-
-   <details class="system">
-    <summary>
-     <div class="system-title"><span class="system-num">03</span><div><h3>Customer Intelligence + Retention System</h3><div class="system-summary">Convert usage, risk, value, and relationship data into action before churn occurs.</div></div></div>
-     <span class="expand">+</span>
-    </summary>
-    <div class="system-body">
-     <div class="system-grid">
-      <div class="step"><small>Segment</small><b>Value, complexity, potential</b></div>
-      <div class="step"><small>Detect</small><b>Usage, risk, sentiment, change</b></div>
-      <div class="step"><small>Act</small><b>Playbooks, escalation, outreach</b></div>
-      <div class="step"><small>Learn</small><b>Root causes and feedback loops</b></div>
-     </div>
-     <div class="body-cols">
-      <div><h4>What I built</h4><ul><li>Weighted tiering based on revenue, customer size, and footprint</li><li>Health and risk dashboards</li><li>Churn/downsell reporting and intervention tracking</li><li>Usage-led expansion and retention playbooks</li></ul></div>
-      <div><h4>Where AI created leverage</h4><ul><li>Pattern recognition across usage and account data</li><li>Predictive expansion signals</li><li>Faster account synthesis and next-best-action support</li><li>Earlier surfacing of risk that might be missed manually</li></ul></div>
-     </div>
-     <div class="result-row"><span class="pill">34 churn/downsell events prevented</span><span class="pill">$6,284 MRR retained</span><span class="pill">109.7% quarterly net retention</span></div>
-    </div>
-   </details>
-
-   <details class="system">
-    <summary>
-     <div class="system-title"><span class="system-num">04</span><div><h3>Executive Decision System</h3><div class="system-summary">Turn scattered operational data into board-ready insight, priorities, and accountable action.</div></div></div>
-     <span class="expand">+</span>
-    </summary>
-    <div class="system-body">
-     <div class="system-grid">
-      <div class="step"><small>Collect</small><b>Customer, financial, usage, capacity</b></div>
-      <div class="step"><small>Interpret</small><b>Trends, risk, opportunity</b></div>
-      <div class="step"><small>Decide</small><b>Tradeoffs, priorities, investment</b></div>
-      <div class="step"><small>Align</small><b>Owners, metrics, next actions</b></div>
-     </div>
-     <div class="body-cols">
-      <div><h4>What I built</h4><ul><li>Board-level customer and operating reports</li><li>Capacity and staffing models</li><li>Company-health and risk workbooks</li><li>Competitive analysis across product, pricing, service, and positioning</li></ul></div>
-      <div><h4>Where AI created leverage</h4><ul><li>Research synthesis across large source sets</li><li>Scenario analysis and first-draft recommendations</li><li>Pattern detection across customer and market data</li><li>Decision support paired with manual validation</li></ul></div>
-     </div>
-     <div class="result-row"><span class="pill">Board-ready narrative + metrics</span><span class="pill">Cross-functional operating visibility</span><span class="pill">Faster research-to-decision cycles</span></div>
-    </div>
-   </details>
-  </div>
- </div>
-</section>
-
-<section id="stories">
- <div class="wrap">
-  <div class="kicker">Company Stories</div>
-  <h2 class="section-title">How the systems performed in the real world.</h2>
-  <p class="lead">Each transformation reflects a different business context, challenge, and stage of growth.</p>
-  <div class="stories">
-   <article class="story">
-    <div class="story-top"><h3>Opus1.io</h3><div class="metric-call">28-day<br>onboarding</div></div>
-    <p>Customer Success, Onboarding, and Support were fragmented, leadership lacked end-to-end visibility, and customers routinely stalled.</p>
-    <details><summary>Read the story →</summary><div>I unified the post-sale operating model, redesigned onboarding, introduced AI-enabled support and knowledge workflows, created customer segmentation and proactive retention motions, and formalized cross-functional escalation. Outcomes included onboarding reduced from 4–6 months to 28 days, CSAT rising from 86% to 99.4%, and retention reaching 105%.</div></details>
-   </article>
-   <article class="story">
-    <div class="story-top"><h3>Upside</h3><div class="metric-call">6 months →<br>~2 weeks</div></div>
-    <p>Merchant onboarding needed a scalable model spanning implementation, adoption, value realization, growth, and renewal.</p>
-    <details><summary>Read the story →</summary><div>I designed the Merchant Success and Onboarding function, including mission, lifecycle strategy, roles, staffing, tooling, segmentation, education, engagement, and capacity planning. The redesigned model materially accelerated onboarding and improved retention.</div></details>
-   </article>
-   <article class="story">
-    <div class="story-top"><h3>Pathmatics</h3><div class="metric-call">153%<br>NRR</div></div>
-    <p>Adoption and customer value were constrained by platform friction, fragmented service delivery, and limited customer intelligence.</p>
-    <details><summary>Read the story →</summary><div>I built service and success systems around customer usage, support economics, account planning, product feedback, and proactive value delivery. The work supported 153% net revenue retention and near-zero churn through acquisition.</div></details>
-   </article>
-   <article class="story">
-    <div class="story-top"><h3>Marketing Evolution</h3><div class="metric-call">$1.2M<br>upsell</div></div>
-    <p>Enterprise customers required complex data implementation, multi-stakeholder onboarding, risk visibility, and clearer commercial value.</p>
-    <details><summary>Read the story →</summary><div>I created implementation and customer-governance systems spanning data discovery, ownership, transfer standards, training, usage analysis, account health, and executive reporting. The work strengthened retention, adoption, and commercial expansion.</div></details>
-   </article>
-  </div>
- </div>
-</section>
-
-
-<section id="endorsements">
- <div class="wrap">
-  <div class="kicker">Executive Endorsements</div>
-  <h2 class="section-title">How leaders describe the work.</h2>
-  <div class="endorsements">
-   <div class="endorsement">
-    <blockquote>“Stephanie is a data driver and understands the need to tell a clear and creative data story to impact meaningful change.”</blockquote>
-    <cite>— Andy Frawley, CEO · Data Axle & Marketing Evolution</cite>
-   </div>
-   <div class="endorsement">
-    <blockquote>“Stephanie uncovered a critical flaw in our platform that was stalling customer adoption. By analysing the data and pinpointing the root cause, she resolved the issue and identified opportunities that led to two new products. Her ability to translate complex customer struggles into actionable insights directly contributed to a 153% increase in revenue and positioned Pathmatics for acquisition.”</blockquote>
-    <cite>— Sarah Chambers, Sr. VP of Customer Success · Pathmatics</cite>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="ai">
- <div class="wrap">
-  <div class="kicker">AI in Practice</div>
-  <h2 class="section-title">Not prompts. Not hype. Operational capability.</h2>
-  <p class="lead">AI is strongest at classification, synthesis, pattern detection, and first drafts. I give it those tasks so people can focus on strategy, judgment, coaching, relationships, and complex problem-solving.</p>
-  <div class="ai-practice">
-   <div class="ai-item"><small>Support</small><h3>AI-assisted routing and triage</h3><div class="ai-flow"><b>Challenge:</b> manual classification and inconsistent handling → <b>System:</b> intent, priority, routing, response assistance, and escalation logic → <b>Outcome:</b> lower handle time with stronger CSAT.</div></div>
-   <div class="ai-item"><small>Knowledge</small><h3>Transcript-informed knowledge architecture</h3><div class="ai-flow"><b>Challenge:</b> fragmented and stale documentation → <b>System:</b> knowledge built from real support interactions with human review → <b>Outcome:</b> faster, more consistent answers.</div></div>
-   <div class="ai-item"><small>Customer Intelligence</small><h3>Predictive risk and expansion signals</h3><div class="ai-flow"><b>Challenge:</b> account changes discovered too late → <b>System:</b> usage, health, and relationship signals synthesized into next actions → <b>Outcome:</b> earlier intervention and more proactive growth.</div></div>
-   <div class="ai-item"><small>Executive Decisions</small><h3>AI-assisted research and analysis</h3><div class="ai-flow"><b>Challenge:</b> too much scattered information → <b>System:</b> multi-source synthesis, scoring, and scenario analysis with manual validation → <b>Outcome:</b> faster, clearer strategic decisions.</div></div>
-  </div>
- </div>
-</section>
-
-<section id="career">
- <div class="wrap">
-  <div class="kicker">Career</div>
-  <h2 class="section-title">Executive scope, builder’s mindset.</h2>
-  <div class="career-grid">
-   <div class="timeline">
-    <div class="role"><b>Vice President, Customer Experience</b><small>Opus1.io · 2024–2025</small></div>
-    <div class="role"><b>Senior Director, Onboarding & Customer Success</b><small>Upside · 2022–2023</small></div>
-    <div class="role"><b>Vice President, Customer Success</b><small>Marketing Evolution · 2021–2022</small></div>
-    <div class="role"><b>Director, Client Services</b><small>Pathmatics · 2019–2021</small></div>
-    <div class="role"><b>Product & Media Partnerships Leadership</b><small>Monster Worldwide / Yahoo! HotJobs</small></div>
-   </div>
-   <div>
-    <h3 style="margin-bottom:14px">Leadership range</h3>
-    <div class="chips">
-     <span class="chip">Customer Experience</span><span class="chip">Customer Success</span><span class="chip">Onboarding</span><span class="chip">Support</span><span class="chip">GTM Operations</span><span class="chip">AI Enablement</span><span class="chip">Executive Reporting</span><span class="chip">Customer Intelligence</span><span class="chip">Change Management</span><span class="chip">Global Teams</span>
-    </div>
-    <div class="ctas">
-     <a class="btn primary" href="Stephanie_Lyons_Resume.pdf" download>Download Resume ↓</a>
-     <a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Opportunity">Contact Stephanie →</a>
-     <a class="btn ghost" href="https://linkedin.com/in/stephlyons" target="_blank" rel="noopener">LinkedIn ↗</a>
-    </div>
-   </div>
-  </div>
- </div>
-</section>
-
-<section id="contact">
- <div class="wrap">
-  <div class="kicker">Contact</div>
-  <h2 class="section-title">Let’s build what’s next.</h2>
-  <div class="contact-grid">
-   <div class="contact"><h3>Executive leadership</h3><p>Hiring for a VP, Head, or senior leader across Customer Experience, Customer Operations, Success, Support, Onboarding, or AI-enabled transformation?</p><a class="btn primary" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Leadership%20Opportunity">Start a conversation →</a></div>
-   <div class="contact"><h3>Consulting and advisory</h3><p>Need a practical operating model, playbook, automation strategy, customer-intelligence system, or executive decision framework?</p><a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Consulting%20or%20Advisory%20Project">Build with Stephanie →</a></div>
-  </div>
- </div>
-</section>
-</main>
-
-<footer><div class="wrap footer"><div>© 2026 Stephanie Lyons · Build With Stephanie</div><div>HiStephanieLyons@gmail.com · Houston, TX · Open to Remote & Relocation</div></div></footer>
+<div class="hero-portrait"><img alt="Stephanie Lyons in her home office" fetchpriority="high" loading="eager" src="Stephanie_Lyons_Headshot.jpeg"/></div></div>
+<div class="metric-band">
+<div class="metric"><small>Business Scale</small><b>$68M → $122M</b><span>Combined company revenue growth during tenure</span></div>
+<div class="metric"><small>Transformation</small><b>4–6 Months → 28 Days</b><span>Customer onboarding</span></div>
+<div class="metric"><small>Customer Experience</small><b>99.4% CSAT</b><span>Up from 86%</span></div>
+<div class="metric"><small>Operating Leverage</small><b>4:00 → 2:03</b><span>Average support handle time</span></div>
+</div>
+</div>
+</section><section id="approach">
+<div class="wrap">
+<div class="kicker">Approach</div>
+<h2 class="section-title">Business first. Customer always. AI where it creates leverage.</h2>
+<p class="lead">I do not start with a tool. I start with the customer journey, the decisions teams need to make, and the friction preventing them from doing their best work.</p>
+<div class="approach-grid">
+<div class="belief">The goal is not to make people work faster. It is to redesign work so people spend more time where human judgment creates value.</div>
+<div class="principles">
+<div class="principle"><b>Find the friction</b>Map where customers stall, teams duplicate work, or leadership lacks visibility.</div>
+<div class="principle"><b>Design the operating model</b>Clarify ownership, milestones, governance, data, and escalation.</div>
+<div class="principle"><b>Apply AI intentionally</b>Automate classification, synthesis, routing, and pattern detection—not relationships.</div>
+<div class="principle"><b>Measure adoption and impact</b>A system is not successful because it launched. It succeeds when people use it and outcomes improve.</div>
+</div>
+</div>
+</div>
+</section><section id="career">
+<div class="wrap">
+<div class="kicker">Career</div>
+<h2 class="section-title">Executive scope, builder’s mindset.</h2>
+<div class="career-grid">
+<div class="timeline">
+<div class="role"><b>Vice President, Customer Experience</b><small>Opus1.io · 2024–2025</small></div>
+<div class="role"><b>Senior Director, Onboarding &amp; Customer Success</b><small>Upside · 2022–2023</small></div>
+<div class="role"><b>Vice President, Customer Success</b><small>Marketing Evolution · 2021–2022</small></div>
+<div class="role"><b>Director, Client Services</b><small>Pathmatics · 2019–2021</small></div>
+<div class="role"><b>Product &amp; Media Partnerships Leadership</b><small>Monster Worldwide / Yahoo! HotJobs</small></div>
+</div>
+<div>
+<h3 style="margin-bottom:14px">Leadership range</h3>
+<div class="chips">
+<span class="chip">Customer Experience</span><span class="chip">Customer Success</span><span class="chip">Onboarding</span><span class="chip">Support</span><span class="chip">GTM Operations</span><span class="chip">AI Enablement</span><span class="chip">Executive Reporting</span><span class="chip">Customer Intelligence</span><span class="chip">Change Management</span><span class="chip">Global Teams</span>
+</div>
+<div class="ctas">
+<a class="btn primary" download="" href="Stephanie_Lyons_Resume.pdf">Download Resume ↓</a>
+<a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Opportunity">Contact Stephanie →</a>
+<a class="btn ghost" href="https://linkedin.com/in/stephlyons" rel="noopener" target="_blank">LinkedIn ↗</a>
+</div>
+</div>
+</div>
+</div>
+</section><section id="systems">
+<div class="wrap">
+<div class="kicker">Operating Systems I’ve Built</div>
+<h2 class="section-title">Different businesses. Different challenges.</h2>
+<p class="lead">I do not bring companies a canned playbook. I start by understanding the business, its customers, and the constraints holding growth back—then design the operating system that organization actually needs.</p>
+<div class="systems">
+<details class="system" open="">
+<summary>
+<div class="system-title"><span class="system-num">01</span><div><h3>Customer Onboarding Operating System</h3><div class="system-summary">A measurable path from contract signature to first value, adoption, and a clean handoff.</div></div></div>
+<span class="expand">+</span>
+</summary>
+<div class="system-body">
+<div class="system-grid">
+<div class="step"><small>Discover</small><b>Goals, readiness, roles, risks</b></div>
+<div class="step"><small>Configure</small><b>Data, integrations, ownership</b></div>
+<div class="step"><small>Activate</small><b>Training, first value, adoption</b></div>
+<div class="step"><small>Handoff</small><b>Health score, success plan, next steps</b></div>
+</div>
+<div class="body-cols">
+<div><h4>What I built</h4><ul><li>Milestone-based implementation framework</li><li>Automated slippage and failed-test alerts</li><li>Onboarding funnel and bottleneck reporting</li><li>Implementation briefs, success plans, go-live checklists, and health-scored handoffs</li></ul></div>
+<div><h4>Where AI created leverage</h4><ul><li>Reduced manual follow-up</li><li>Surfaced risk points earlier</li><li>Supported internal tooling when engineering capacity was limited</li><li>Improved knowledge retrieval and workflow consistency</li></ul></div>
+</div>
+<div class="result-row"><span class="pill">4–6 months → 28 days</span><span class="pill">27% higher renewal for sub-30-day onboarding</span><span class="pill">First-value milestone defined early</span></div>
+</div>
+</details>
+<details class="system">
+<summary>
+<div class="system-title"><span class="system-num">02</span><div><h3>Support + AI Operating System</h3><div class="system-summary">Move support from reactive ticket handling to assisted, automated, and proactive service.</div></div></div>
+<span class="expand">+</span>
+</summary>
+<div class="system-body">
+<div class="system-grid">
+<div class="step"><small>Assist</small><b>Knowledge, triage, agent support</b></div>
+<div class="step"><small>Automate</small><b>Routing, self-service, repetitive flows</b></div>
+<div class="step"><small>Anticipate</small><b>Patterns, alerts, prevention</b></div>
+<div class="step"><small>Improve</small><b>CSAT, cost, quality loops</b></div>
+</div>
+<div class="body-cols">
+<div><h4>What I built</h4><ul><li>Zendesk routing, priority, and escalation logic</li><li>Dynamic knowledge and response workflows</li><li>Weekly automation-impact reviews</li><li>Closed-loop collaboration across Support, Product, Engineering, and CX</li></ul></div>
+<div><h4>Where AI created leverage</h4><ul><li>Issue classification and intent routing</li><li>Response suggestions and tone checks</li><li>Sentiment tagging and trend analysis</li><li>Proactive alerts before repeat issues grew</li></ul></div>
+</div>
+<div class="result-row"><span class="pill">4:00 → 2:03 handle time</span><span class="pill">99.4% peak CSAT</span><span class="pill">28% of inbound volume automated in sample model</span></div>
+</div>
+</details>
+<details class="system">
+<summary>
+<div class="system-title"><span class="system-num">03</span><div><h3>Customer Intelligence + Retention System</h3><div class="system-summary">Convert usage, risk, value, and relationship data into action before churn occurs.</div></div></div>
+<span class="expand">+</span>
+</summary>
+<div class="system-body">
+<div class="system-grid">
+<div class="step"><small>Segment</small><b>Value, complexity, potential</b></div>
+<div class="step"><small>Detect</small><b>Usage, risk, sentiment, change</b></div>
+<div class="step"><small>Act</small><b>Playbooks, escalation, outreach</b></div>
+<div class="step"><small>Learn</small><b>Root causes and feedback loops</b></div>
+</div>
+<div class="body-cols">
+<div><h4>What I built</h4><ul><li>Weighted tiering based on revenue, customer size, and footprint</li><li>Health and risk dashboards</li><li>Churn/downsell reporting and intervention tracking</li><li>Usage-led expansion and retention playbooks</li></ul></div>
+<div><h4>Where AI created leverage</h4><ul><li>Pattern recognition across usage and account data</li><li>Predictive expansion signals</li><li>Faster account synthesis and next-best-action support</li><li>Earlier surfacing of risk that might be missed manually</li></ul></div>
+</div>
+<div class="result-row"><span class="pill">34 churn/downsell events prevented</span><span class="pill">$6,284 MRR retained</span><span class="pill">109.7% quarterly net retention</span></div>
+</div>
+</details>
+<details class="system">
+<summary>
+<div class="system-title"><span class="system-num">04</span><div><h3>Executive Decision System</h3><div class="system-summary">Turn scattered operational data into board-ready insight, priorities, and accountable action.</div></div></div>
+<span class="expand">+</span>
+</summary>
+<div class="system-body">
+<div class="system-grid">
+<div class="step"><small>Collect</small><b>Customer, financial, usage, capacity</b></div>
+<div class="step"><small>Interpret</small><b>Trends, risk, opportunity</b></div>
+<div class="step"><small>Decide</small><b>Tradeoffs, priorities, investment</b></div>
+<div class="step"><small>Align</small><b>Owners, metrics, next actions</b></div>
+</div>
+<div class="body-cols">
+<div><h4>What I built</h4><ul><li>Board-level customer and operating reports</li><li>Capacity and staffing models</li><li>Company-health and risk workbooks</li><li>Competitive analysis across product, pricing, service, and positioning</li></ul></div>
+<div><h4>Where AI created leverage</h4><ul><li>Research synthesis across large source sets</li><li>Scenario analysis and first-draft recommendations</li><li>Pattern detection across customer and market data</li><li>Decision support paired with manual validation</li></ul></div>
+</div>
+<div class="result-row"><span class="pill">Board-ready narrative + metrics</span><span class="pill">Cross-functional operating visibility</span><span class="pill">Faster research-to-decision cycles</span></div>
+</div>
+</details>
+</div>
+<div class="ai-embedded"><div class="kicker">AI in Practice</div><h2 class="section-title">Not prompts. Not hype. Operational capability.</h2><p class="lead">AI is strongest at classification, synthesis, pattern detection, and first drafts. I give it those tasks so people can focus on strategy, judgment, coaching, relationships, and complex problem-solving.</p><div class="ai-practice">
+<div class="ai-item"><small>Support</small><h3>AI-assisted routing and triage</h3><div class="ai-flow"><b>Challenge:</b> manual classification and inconsistent handling → <b>System:</b> intent, priority, routing, response assistance, and escalation logic → <b>Outcome:</b> lower handle time with stronger CSAT.</div></div>
+<div class="ai-item"><small>Knowledge</small><h3>Transcript-informed knowledge architecture</h3><div class="ai-flow"><b>Challenge:</b> fragmented and stale documentation → <b>System:</b> knowledge built from real support interactions with human review → <b>Outcome:</b> faster, more consistent answers.</div></div>
+<div class="ai-item"><small>Customer Intelligence</small><h3>Predictive risk and expansion signals</h3><div class="ai-flow"><b>Challenge:</b> account changes discovered too late → <b>System:</b> usage, health, and relationship signals synthesized into next actions → <b>Outcome:</b> earlier intervention and more proactive growth.</div></div>
+<div class="ai-item"><small>Executive Decisions</small><h3>AI-assisted research and analysis</h3><div class="ai-flow"><b>Challenge:</b> too much scattered information → <b>System:</b> multi-source synthesis, scoring, and scenario analysis with manual validation → <b>Outcome:</b> faster, clearer strategic decisions.</div></div>
+</div></div></div>
+</section><section id="stories">
+<div class="wrap">
+<div class="kicker">Transformation Stories</div>
+<h2 class="section-title">How the systems performed in the real world.</h2>
+<p class="lead">Each transformation reflects a different business context, challenge, and stage of growth.</p>
+<div class="stories">
+<article class="story">
+<div class="story-top"><h3>Opus1.io</h3><div class="metric-call">28-day<br/>onboarding</div></div>
+<p>Customer Success, Onboarding, and Support were fragmented, leadership lacked end-to-end visibility, and customers routinely stalled.</p>
+<details><summary>Read the story →</summary><div>I unified the post-sale operating model, redesigned onboarding, introduced AI-enabled support and knowledge workflows, created customer segmentation and proactive retention motions, and formalized cross-functional escalation. Outcomes included onboarding reduced from 4–6 months to 28 days, CSAT rising from 86% to 99.4%, and retention reaching 105%.</div></details>
+</article>
+<article class="story">
+<div class="story-top"><h3>Upside</h3><div class="metric-call">6 months →<br/>~2 weeks</div></div>
+<p>Merchant onboarding needed a scalable model spanning implementation, adoption, value realization, growth, and renewal.</p>
+<details><summary>Read the story →</summary><div>I designed the Merchant Success and Onboarding function, including mission, lifecycle strategy, roles, staffing, tooling, segmentation, education, engagement, and capacity planning. The redesigned model materially accelerated onboarding and improved retention.</div></details>
+</article>
+<article class="story">
+<div class="story-top"><h3>Pathmatics</h3><div class="metric-call">153%<br/>NRR</div></div>
+<p>Adoption and customer value were constrained by platform friction, fragmented service delivery, and limited customer intelligence.</p>
+<details><summary>Read the story →</summary><div>I built service and success systems around customer usage, support economics, account planning, product feedback, and proactive value delivery. The work supported 153% net revenue retention and near-zero churn through acquisition.</div></details>
+</article>
+<article class="story">
+<div class="story-top"><h3>Marketing Evolution</h3><div class="metric-call">$1.2M<br/>upsell</div></div>
+<p>Enterprise customers required complex data implementation, multi-stakeholder onboarding, risk visibility, and clearer commercial value.</p>
+<details><summary>Read the story →</summary><div>I created implementation and customer-governance systems spanning data discovery, ownership, transfer standards, training, usage analysis, account health, and executive reporting. The work strengthened retention, adoption, and commercial expansion.</div></details>
+</article>
+</div>
+<div class="representative-work">
+<h3>Representative Work</h3>
+<p>The operating systems, strategies, and business outcomes shared throughout these transformation stories reflect a representative sample of my work. Many supporting artifacts—including board presentations, AI strategies, implementation playbooks, executive dashboards, competitive intelligence, and operating plans—contain confidential business information and cannot be shared publicly.</p>
+<p><strong>Representative work samples and executive references are available upon request during the interview process.</strong></p>
+</div></div>
+</section><section id="endorsements">
+<div class="wrap">
+<div class="kicker">Executive Endorsements</div>
+<h2 class="section-title">How leaders describe the work.</h2>
+<div class="endorsements">
+<div class="endorsement">
+<blockquote>“Stephanie is a data driver and understands the need to tell a clear and creative data story to impact meaningful change.”</blockquote>
+<cite>— Andy Frawley, CEO · Data Axle &amp; Marketing Evolution</cite>
+</div>
+<div class="endorsement">
+<blockquote>“Stephanie uncovered a critical flaw in our platform that was stalling customer adoption. By analysing the data and pinpointing the root cause, she resolved the issue and identified opportunities that led to two new products. Her ability to translate complex customer struggles into actionable insights directly contributed to a 153% increase in revenue and positioned Pathmatics for acquisition.”</blockquote>
+<cite>— Sarah Chambers, Sr. VP of Customer Success · Pathmatics</cite>
+</div>
+</div>
+</div>
+</section><section id="contact">
+<div class="wrap">
+<div class="kicker">Contact</div>
+<h2 class="section-title">Let’s build what’s next.</h2>
+<div class="contact-grid">
+<div class="contact"><h3>Executive leadership</h3><p>Hiring for a VP, Head, or senior leader across Customer Experience, Customer Operations, Success, Support, Onboarding, or AI-enabled transformation?</p><a class="btn primary" href="mailto:HiStephanieLyons@gmail.com?subject=Executive%20Leadership%20Opportunity">Start a conversation →</a></div>
+<div class="contact"><h3>Consulting and advisory</h3><p>Need a practical operating model, playbook, automation strategy, customer-intelligence system, or executive decision framework?</p><a class="btn ghost" href="mailto:HiStephanieLyons@gmail.com?subject=Consulting%20or%20Advisory%20Project">Build with Stephanie →</a></div>
+</div>
+</div>
+</section></main>
+<footer><div class="wrap footer"><div>© 2026 Stephanie Lyons · Build With Stephanie</div><div>HiStephanieLyons@gmail.com · Houston, TX · Open to Remote &amp; Relocation</div></div></footer>
 </body>
 </html>
