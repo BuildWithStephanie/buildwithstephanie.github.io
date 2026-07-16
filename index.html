@@ -117,6 +117,13 @@ footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-s
  .metric:last-child{border-bottom:0}.system-grid{grid-template-columns:1fr 1fr}
  .system summary{padding:20px}.system-body{padding:0 20px 22px}
 }
+
+.endorsements{display:grid;grid-template-columns:1fr 1.45fr;gap:18px;margin-top:30px}
+.endorsement{background:var(--ink);color:#fff;padding:30px;border-left:4px solid var(--gold)}
+.endorsement blockquote{margin:0;font-family:Georgia,serif;font-size:1.25rem;line-height:1.45}
+.endorsement cite{display:block;margin-top:16px;color:#cbd5e5;font-style:normal;font-size:.82rem}
+@media(max-width:760px){.endorsements{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -308,6 +315,24 @@ footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-s
     <p>Enterprise customers required complex data implementation, multi-stakeholder onboarding, risk visibility, and clearer commercial value.</p>
     <details><summary>Read the story →</summary><div>I created implementation and customer-governance systems spanning data discovery, ownership, transfer standards, training, usage analysis, account health, and executive reporting. The work strengthened retention, adoption, and commercial expansion.</div></details>
    </article>
+  </div>
+ </div>
+</section>
+
+
+<section id="endorsements">
+ <div class="wrap">
+  <div class="kicker">Executive Endorsements</div>
+  <h2 class="section-title">How leaders describe the work.</h2>
+  <div class="endorsements">
+   <div class="endorsement">
+    <blockquote>“Stephanie is a data driver and understands the need to tell a clear and creative data story to impact meaningful change.”</blockquote>
+    <cite>— Andy Frawley, CEO · Data Axle &amp; Marketing Evolution</cite>
+   </div>
+   <div class="endorsement">
+    <blockquote>“Stephanie uncovered a critical flaw in our platform that was stalling customer adoption. By analysing the data and pinpointing the root cause, she resolved the issue and identified opportunities that led to two new products. Her ability to translate complex customer struggles into actionable insights directly contributed to a 153% increase in revenue and positioned Pathmatics for acquisition.”</blockquote>
+    <cite>— Sarah Chambers, Sr. VP of Customer Success · Pathmatics</cite>
+   </div>
   </div>
  </div>
 </section>
