@@ -1,4 +1,4 @@
-# Build With Stephanie — Final Content Locked
+# Build With Stephanie — Final Hero Updated
 
 Upload all four files to the root of the GitHub repository:
 
@@ -7,7 +7,7 @@ Upload all four files to the root of the GitHub repository:
 - Stephanie_Lyons_Resume.pdf
 - README.md
 
-Navigation:
-Approach → Career → Operating Systems → Transformation Stories → Executive Endorsements → Contact
+This version updates the hero headline to:
+Building Better Customer Experiences That Drive Growth.
 
-The approved portrait is preserved at its original aspect ratio on desktop and mobile.
+It also scales the hero image down on desktop and mobile while preserving the approved palette and portrait.

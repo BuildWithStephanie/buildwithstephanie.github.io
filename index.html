@@ -531,6 +531,270 @@ footer{background:var(--teal-deep)!important;border-top-color:rgba(182,147,97,.3
   .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .ai-card-lines p{grid-template-columns:1fr;gap:3px}
 }
+
+/* HERO SIZE + APPROVED COLOR CORRECTION */
+:root{
+  --ink:#16363b;
+  --text:#394b4e;
+  --muted:#6f7b7d;
+  --paper:#f7f3ec;
+  --white:#fffdf9;
+  --soft:#efe8de;
+  --line:#d8cfc2;
+  --teal:#123d43;
+  --teal-deep:#0d3036;
+  --cream:#f7f3ec;
+  --charcoal:#222b2d;
+  --walnut:#6a4a34;
+  --accent:#b49770;
+  --accent-soft:#d6c1a2;
+}
+
+/* Header and overall palette */
+header{
+  background:#0d3036!important;
+  border-bottom:1px solid rgba(180,151,112,.3)!important;
+}
+body{background:#f7f3ec!important}
+.navlinks>a{color:#f8f5ef!important}
+.navlinks>a:hover{color:#d6c1a2!important}
+.nav-resume{
+  border-color:#b49770!important;
+  color:#fff!important;
+}
+.nav-cta{
+  background:#b49770!important;
+  border-color:#b49770!important;
+  color:#0d3036!important;
+}
+.brand span,.eyebrow,.kicker{color:#b49770!important}
+
+/* Desktop hero */
+.hero{
+  background:#f7f3ec!important;
+  color:#394b4e!important;
+  padding:0!important;
+}
+.hero .wrap{
+  width:100%!important;
+  max-width:none!important;
+  padding:0!important;
+}
+.hero-grid{
+  display:grid!important;
+  grid-template-columns:46% 54%!important;
+  gap:0!important;
+  align-items:stretch!important;
+  min-height:560px!important;
+  max-height:640px!important;
+  overflow:hidden!important;
+}
+.hero-grid>div:first-child{
+  background:#f7f3ec!important;
+  color:#394b4e!important;
+  padding:64px clamp(42px,5vw,88px)!important;
+  display:flex!important;
+  flex-direction:column!important;
+  justify-content:center!important;
+  position:relative!important;
+  z-index:3!important;
+}
+.hero h1{color:#16363b!important}
+.hero h1 em{color:#b49770!important}
+.hero p{color:#394b4e!important}
+.hero .btn.ghost{color:#16363b!important}
+.btn{border-color:#b49770!important}
+.btn.primary{
+  background:#b49770!important;
+  color:#0d3036!important;
+}
+.btn.primary:hover{background:#a48863!important}
+
+/* Keep portrait visually balanced */
+.hero-portrait{
+  position:relative!important;
+  height:100%!important;
+  min-height:560px!important;
+  max-height:640px!important;
+  overflow:hidden!important;
+  background:#0d3036!important;
+}
+.hero-portrait::before{
+  content:""!important;
+  position:absolute!important;
+  inset:0 auto 0 0!important;
+  width:14%!important;
+  z-index:2!important;
+  pointer-events:none!important;
+  background:linear-gradient(
+    90deg,
+    #f7f3ec 0%,
+    rgba(247,243,236,.72) 30%,
+    rgba(247,243,236,0) 100%
+  )!important;
+}
+.hero-portrait img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:50% 44%!important;
+}
+
+/* Metrics and site sections */
+.metric-band{background:#fffdf9!important}
+.metric b,.section-title,h1,h2,h3,
+.principle b,.step b,.body-cols h4,.role b,.ai-flow b{
+  color:#16363b!important;
+}
+section:nth-of-type(even):not(.hero){background:#fffdf9!important}
+section:nth-of-type(odd):not(.hero){background:#f7f3ec!important}
+.timeline{border-left-color:#b49770!important}
+.role:before{background:#b49770!important}
+.expand{color:#9c7f5d!important}
+.endorsement{
+  background:#0d3036!important;
+  border-left-color:#b49770!important;
+}
+footer{
+  background:#0d3036!important;
+  border-top-color:rgba(180,151,112,.3)!important;
+}
+
+/* Tablet */
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:48% 52%!important;
+    min-height:520px!important;
+    max-height:590px!important;
+  }
+  .hero-portrait{
+    min-height:520px!important;
+    max-height:590px!important;
+  }
+}
+
+/* Mobile: text first, controlled image below */
+@media(max-width:920px){
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    min-height:0!important;
+    max-height:none!important;
+    overflow:visible!important;
+  }
+  .hero-grid>div:first-child{
+    padding:44px 28px 34px!important;
+    background:#f7f3ec!important;
+  }
+  .hero-portrait{
+    width:100%!important;
+    height:390px!important;
+    min-height:390px!important;
+    max-height:390px!important;
+    overflow:hidden!important;
+  }
+  .hero-portrait::before{
+    inset:0 0 auto 0!important;
+    width:100%!important;
+    height:12%!important;
+    background:linear-gradient(
+      180deg,
+      #f7f3ec 0%,
+      rgba(247,243,236,.55) 40%,
+      rgba(247,243,236,0) 100%
+    )!important;
+  }
+  .hero-portrait img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    object-position:50% 39%!important;
+  }
+}
+
+/* Small mobile */
+@media(max-width:600px){
+  .hero-grid>div:first-child{padding:38px 22px 28px!important}
+  .hero h1{font-size:clamp(2.35rem,12vw,3.5rem)!important}
+  .hero-portrait{
+    height:320px!important;
+    min-height:320px!important;
+    max-height:320px!important;
+  }
+  .hero-portrait img{
+    object-position:50% 38%!important;
+  }
+}
+
+/* FINAL HERO HEADLINE + SCALE FIX */
+.hero-grid{
+  grid-template-columns:50% 50%!important;
+  min-height:500px!important;
+  max-height:500px!important;
+}
+.hero-grid>div:first-child{
+  padding:58px clamp(40px,4.5vw,76px)!important;
+}
+.hero h1{
+  max-width:11ch!important;
+  line-height:1.04!important;
+  letter-spacing:-0.03em!important;
+}
+.hero h1 em{color:inherit!important}
+.hero-portrait{
+  min-height:500px!important;
+  max-height:500px!important;
+}
+.hero-portrait::before{
+  width:12%!important;
+}
+.hero-portrait img{
+  object-fit:cover!important;
+  object-position:50% 41%!important;
+}
+@media(max-width:1100px){
+  .hero-grid{
+    grid-template-columns:50% 50%!important;
+    min-height:460px!important;
+    max-height:460px!important;
+  }
+  .hero-portrait{
+    min-height:460px!important;
+    max-height:460px!important;
+  }
+  .hero-grid>div:first-child{padding:50px 34px!important}
+  .hero h1{max-width:12ch!important}
+}
+@media(max-width:920px){
+  .hero-grid{
+    grid-template-columns:1fr!important;
+    min-height:0!important;
+    max-height:none!important;
+  }
+  .hero-grid>div:first-child{
+    padding:40px 28px 28px!important;
+  }
+  .hero-portrait{
+    height:300px!important;
+    min-height:300px!important;
+    max-height:300px!important;
+  }
+  .hero-portrait img{
+    object-fit:cover!important;
+    object-position:50% 36%!important;
+  }
+}
+@media(max-width:600px){
+  .hero-grid>div:first-child{padding:36px 22px 24px!important}
+  .hero-portrait{
+    height:260px!important;
+    min-height:260px!important;
+    max-height:260px!important;
+  }
+  .hero-portrait img{
+    object-position:50% 35%!important;
+  }
+}
 </style>
 </head>
 <body>
@@ -548,7 +812,7 @@ footer{background:var(--teal-deep)!important;border-top-color:rgba(182,147,97,.3
 <div class="hero-grid">
 <div>
 <div class="eyebrow">Customer Experience · Operations · AI Enablement</div>
-<h1>Building Visible Customer Experiences. <em>Enabled by Meaningful AI.</em></h1>
+<h1>Building Better Customer Experiences That Drive Growth.</h1>
 <p>I help companies simplify operations, strengthen customer experience, and apply AI where it creates measurable business value.</p>
 <div class="ctas">
 <a class="btn primary" href="#systems">Explore the Systems →</a>
