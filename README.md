@@ -1,13 +1,10 @@
-# Build With Stephanie — Final No-Crop Hero
+# Build With Stephanie — Final Spacing Fix
 
-Upload all four files directly to the root of the GitHub repository:
+Upload all four files to the root of the GitHub repository.
 
-- index.html
-- Stephanie_Lyons_Headshot.jpeg
-- Stephanie_Lyons_Resume.pdf
-- README.md
+Changes in this package are limited to:
+- removing the visible HTML comment
+- reducing the desktop gap between the logo and navigation
+- adding breathing room before the two right-side buttons
 
-Hero headline:
-Building Better Customer Experiences That Drive Growth.
-
-The approved 4:3 portrait is displayed in full on desktop and mobile.
+No site copy, colors, hero sizing, sections, or mobile navigation were changed.

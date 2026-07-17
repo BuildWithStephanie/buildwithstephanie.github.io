@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 
 <html lang="en">
-&lt;!-- BUILD WITH STEPHANIE: FINAL NO-CROP HERO VERSION 2026-07-16 --&gt;
-
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
@@ -694,6 +692,183 @@ footer{background:var(--teal-deep)!important;border-top-color:rgba(182,147,97,.3
     width: calc(100% + 36px) !important;
   }
 }
+
+/* =========================================================
+   FINAL HEADER SPACING + MOBILE NAV
+   ========================================================= */
+
+header .wrap,
+header nav {
+  display: grid !important;
+  grid-template-columns: auto 1fr auto !important;
+  align-items: center !important;
+  column-gap: 28px !important;
+}
+
+.navlinks {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 26px !important;
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.navlinks > a {
+  margin: 0 !important;
+  white-space: nowrap !important;
+  flex: 0 0 auto !important;
+}
+
+.navlinks .nav-resume,
+.navlinks .nav-cta {
+  flex: 0 0 auto !important;
+}
+
+.mobile-nav-toggle {
+  display: none;
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Industries narrative replaces oversized cards */
+.industries-story {
+  max-width: 940px;
+  margin: 30px 0 34px;
+  padding: 28px 30px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.industries-story h3 {
+  margin: 0 0 14px;
+}
+
+.industries-story p {
+  margin: 0 0 14px;
+  line-height: 1.72;
+}
+
+.industries-story p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1180px) {
+  .navlinks {
+    gap: 18px !important;
+  }
+
+  .navlinks > a {
+    font-size: .76rem !important;
+  }
+}
+
+@media (max-width: 920px) {
+  header .wrap,
+  header nav {
+    display: grid !important;
+    grid-template-columns: 1fr auto !important;
+    column-gap: 12px !important;
+    position: relative !important;
+  }
+
+  .mobile-nav-toggle {
+    display: block !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+  }
+
+  .navlinks {
+    display: none !important;
+    position: absolute !important;
+    top: calc(100% + 1px) !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 1000 !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+    padding: 12px 20px 18px !important;
+    background: #0d3036 !important;
+    border-top: 1px solid rgba(180,151,112,.3) !important;
+    box-shadow: 0 18px 30px rgba(0,0,0,.16) !important;
+  }
+
+  .navlinks.is-open {
+    display: flex !important;
+  }
+
+  .navlinks > a {
+    display: block !important;
+    width: 100% !important;
+    padding: 13px 2px !important;
+    font-size: .92rem !important;
+    border-bottom: 1px solid rgba(255,255,255,.10) !important;
+  }
+
+  .navlinks > a:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .navlinks .nav-resume,
+  .navlinks .nav-cta {
+    margin-top: 10px !important;
+    text-align: center !important;
+    padding: 12px 14px !important;
+  }
+
+  .industries-story {
+    margin: 24px 0 30px;
+    padding: 22px;
+  }
+}
+
+
+/* FINAL SURGICAL HEADER SPACING FIX — NOTHING ELSE */
+@media (min-width: 921px) {
+  header nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 0 !important;
+  }
+
+  header .brand {
+    flex: 0 0 auto !important;
+    margin-right: 28px !important;
+  }
+
+  header .navlinks {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    flex: 1 1 auto !important;
+    gap: 24px !important;
+    width: auto !important;
+    margin: 0 !important;
+  }
+
+  header .navlinks > a {
+    flex: 0 0 auto !important;
+    margin: 0 !important;
+  }
+
+  header .navlinks .nav-resume {
+    margin-left: auto !important;
+  }
+
+  header .navlinks .nav-cta {
+    margin-left: 2px !important;
+  }
+}
 </style>
 </head>
 <body>
@@ -701,7 +876,7 @@ footer{background:var(--teal-deep)!important;border-top-color:rgba(182,147,97,.3
 <div class="wrap">
 <nav>
 <a class="brand" href="#top">BUILD WITH <span>STEPHANIE</span></a>
-<div class="navlinks"><a href="#approach">Approach</a><a href="#career">Career</a><a href="#systems">Operating Systems</a><a href="#stories">Transformation Stories</a><a href="#endorsements">Executive Endorsements</a><a href="#contact">Contact</a><a class="nav-resume" download="" href="Stephanie_Lyons_Resume.pdf">Download Resume</a><a class="nav-cta" href="#contact">Contact Stephanie</a></div>
+<button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="mobile-nav-toggle" type="button">☰</button><div class="navlinks" id="primary-navigation"><a href="#approach">Approach</a><a href="#career">Career</a><a href="#systems">Operating Systems</a><a href="#stories">Transformation Stories</a><a href="#endorsements">Executive Endorsements</a><a href="#contact">Contact</a><a class="nav-resume" download="" href="Stephanie_Lyons_Resume.pdf">Download Resume</a><a class="nav-cta" href="#contact">Contact Stephanie</a></div>
 </nav>
 </div>
 </header>
@@ -758,16 +933,11 @@ footer{background:var(--teal-deep)!important;border-top-color:rgba(182,147,97,.3
 <div class="role"><b>Product &amp; Media Partnerships Leadership</b><small>Monster Worldwide / Yahoo! HotJobs</small></div>
 </div>
 <div>
-<div class="industry-range">
-<div>
-<small>Technology sectors</small>
-<p>AdTech · MarTech · EdTech · SaaS · Marketplace Technology</p>
-</div>
-<div>
-<small>Industries served</small>
-<p>Consumer Packaged Goods · Automotive · Publishing and Media · Advertising Agencies · Financial Services · Banking · Education · Government and Military · Recruiting and Hiring · Social Platforms · Insurance · Healthcare and Pharmaceutical</p>
-</div>
-</div><h3 style="margin-bottom:14px">Leadership range</h3>
+<div class="industries-story">
+<h3>Industries Served</h3>
+<p>Throughout my career, I've partnered with organizations across <strong>advertising, marketing, education, financial services, banking, insurance, healthcare, government, military, recruiting, publishing, automotive, consumer packaged goods, media, social platforms, pharmaceutical, and many others.</strong></p>
+<p>Every industry has different products, customers, and challenges, but the work is always the same. Learn the business. Understand the customer. Build systems that help people do their best work. That experience has given me the ability to quickly adapt, recognize patterns, and create meaningful improvements wherever I go.</p>
+</div><h3 style="margin-bottom:14px">Areas of Leadership</h3>
 <div class="chips">
 <span class="chip">Customer Experience</span><span class="chip">Customer Success</span><span class="chip">Onboarding</span><span class="chip">Support</span><span class="chip">GTM Operations</span><span class="chip">AI Enablement</span><span class="chip">Executive Reporting</span><span class="chip">Customer Intelligence</span><span class="chip">Change Management</span><span class="chip">Global Teams</span>
 </div>
@@ -968,5 +1138,33 @@ document.querySelectorAll('details.system').forEach((detail) => {
   update();
   detail.addEventListener('toggle', update);
 });
+</script><script>
+(() => {
+  const toggle = document.querySelector('.mobile-nav-toggle');
+  const nav = document.querySelector('.navlinks');
+  if (!toggle || !nav) return;
+
+  const closeMenu = () => {
+    nav.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-label', 'Open navigation');
+    toggle.textContent = '☰';
+  };
+
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+    toggle.textContent = open ? '×' : '☰';
+  });
+
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 920) closeMenu();
+  });
+})();
 </script></body>
 </html>
